@@ -6,7 +6,7 @@
 
 用户也可以基于自己的实际需要，自定义注解。
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.houbb/sensitive/badge.svg)](http://mvnrepository.com/artifact/com.github.houbb/sensitive)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.yizhishang/sensitive/badge.svg)](http://mvnrepository.com/artifact/com.github.yizhishang/sensitive)
 [![Build Status](https://www.travis-ci.org/houbb/sensitive.svg?branch=master)](https://www.travis-ci.org/houbb/sensitive?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/houbb/sensitive/badge.svg?branch=master)](https://coveralls.io/github/houbb/sensitive?branch=master)
 
@@ -64,7 +64,7 @@ Maven 3.x
 
 ```xml
 <dependency>
-    <groupId>com.github.houbb</groupId>
+    <groupId>com.github.yizhishang</groupId>
     <artifactId>sensitive-core</artifactId>
     <version>0.0.7</version>
 </dependency>

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.houbb</groupId>
+    <groupId>com.github.yizhishang</groupId>
     <artifactId>sensitive</artifactId>
     <packaging>pom</packaging>
     <version>0.0.7</version>
@@ -140,7 +140,7 @@
 
     <!--============================== ADD For sonatype START ==============================-->
     <name>sensitive</name>
-    <description>Sensitive 基于 java 注解的日志脱敏工具.</description>
+    <description>Sensitive 基于 java 注解的日志脱敏工具.二次开发</description>
 
     <parent>
         <groupId>org.sonatype.oss</groupId>
@@ -155,15 +155,19 @@
         </license>
     </licenses>
     <scm>
-        <url>https://github.com/houbb/sensitve</url>
-        <connection>https://github.com/houbb/sensitve.git</connection>
-        <developerConnection>https://houbb.github.io/</developerConnection>
+        <url>https://github.com/yizhishang/sensitve</url>
+        <connection>https://github.com/yizhishang/sensitve.git</connection>
+<!--        <developerConnection>https://yizhishang.github.io/</developerConnection>-->
     </scm>
     <developers>
         <developer>
             <name>houbb</name>
             <email>houbinbin.echo@gmail.com</email>
             <url>https://houbb.github.io/</url>
+        </developer>
+        <developer>
+            <name>yizhishang</name>
+            <email>yizhishang0@gmail.com</email>
         </developer>
     </developers>
     <!--============================== ADD For sonatype END ==============================-->

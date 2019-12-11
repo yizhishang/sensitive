@@ -2,8 +2,8 @@
 echo "============================= RELEASE START..."
 
 ## 版本号信息(需要手动指定)
-oldVersion="0.0.5"
-newVersion="0.0.5"
+oldVersion="0.0.7"
+newVersion="0.1.0"
 projectName="sensitive"
 
 # 删除分支
@@ -24,7 +24,7 @@ echo "2. NEW BRANCH DONE."
 # 修改新分支的版本号
 ## snapshot 版本号
 snapshot_new_version=${newVersion}"-SNAPSHOT"
-mvn versions:set -DgroupId=com.github.houbb -DartifactId=${projectName} -DoldVersion=${release_version} -DnewVersion=${snapshot_new_version}
+mvn versions:set -DgroupId=com.github.yizhishang -DartifactId=${projectName} -DoldVersion=${release_version} -DnewVersion=${snapshot_new_version}
 mvn -N versions:update-child-modules
 mvn versions:commit
 
@@ -44,4 +44,4 @@ git branch -a
 # 1. 赋值权限： chmod +x ./release_rm.sh
 # 2. 执行： ./release_rm.sh
 # Last Update Time: 2018-06-21 11:10:42
-# Author:   houbb
+# Author:   yizhishang
