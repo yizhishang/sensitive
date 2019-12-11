@@ -3,7 +3,7 @@ echo "============================= RELEASE START..."
 
 ## 版本号信息(需要手动指定)
 oldVersion="0.0.7"
-newVersion="0.1.0"
+newVersion="0.0.7"
 projectName="sensitive"
 
 # release 项目版本
