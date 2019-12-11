@@ -8,7 +8,7 @@
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.yizhishang/sensitive/badge.svg)](http://mvnrepository.com/artifact/com.github.yizhishang/sensitive)
 [![Build Status](https://www.travis-ci.org/houbb/sensitive.svg?branch=master)](https://www.travis-ci.org/houbb/sensitive?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/houbb/sensitive/badge.svg?branch=master)](https://coveralls.io/github/houbb/sensitive?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/yizhishang/sensitive/badge.svg?branch=master)](https://coveralls.io/github/yizhishang/sensitive?branch=master)
 
 > [变更日志](doc/CHANGE_LOG.md)
 

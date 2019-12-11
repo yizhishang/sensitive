@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # 提交
 
 git add .
