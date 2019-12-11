@@ -55,3 +55,4 @@
 |:---|:---|:---|:---|:--|
 | 1 | A | 新增 SensitiveUtil#desCopyCollection | 2019-12-7 07:41:48 | 集合对象脱敏 |
 | 2 | A | 新增 SensitiveUtil#desJsonCollection | 2019-12-7 07:41:48 | 集合对象脱敏 |
+| 3 | U | 更新 SensitiveStrategyUtil#password | 2019-12-11 17:41:48 | 密码null修改 |
