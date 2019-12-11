@@ -126,7 +126,7 @@ public class User {
 
 ```
 脱敏前原始： User{username='脱敏君', idCard='123456190001011234', password='1234567', email='12345@qq.com', phone='18888888888'}
-脱敏对象： User{username='脱*君', idCard='123456**********34', password='null', email='123**@qq.com', phone='188****8888'}
+脱敏对象： User{username='脱*君', idCard='123456**********34', password='*******', email='123**@qq.com', phone='188****8888'}
 脱敏后原始： User{username='脱敏君', idCard='123456190001011234', password='1234567', email='12345@qq.com', phone='18888888888'}
 ```
 
@@ -331,7 +331,7 @@ public void sensitiveEntryObjectTest() {
 
 ```java
 脱敏前原始： UserEntryObject{user=User{username='脱敏君', idCard='123456190001011234', password='1234567', email='12345@qq.com', phone='18888888888'}, userList=[User{username='脱敏君', idCard='123456190001011234', password='1234567', email='12345@qq.com', phone='18888888888'}], userArray=[User{username='脱敏君', idCard='123456190001011234', password='1234567', email='12345@qq.com', phone='18888888888'}]}
-脱敏对象： UserEntryObject{user=User{username='脱*君', idCard='123456**********34', password='null', email='123**@qq.com', phone='188****8888'}, userList=[User{username='脱*君', idCard='123456**********34', password='null', email='123**@qq.com', phone='188****8888'}], userArray=[User{username='脱*君', idCard='123456**********34', password='null', email='123**@qq.com', phone='188****8888'}]}
+脱敏对象： UserEntryObject{user=User{username='脱*君', idCard='123456**********34', password='*******', email='123**@qq.com', phone='188****8888'}, userList=[User{username='脱*君', idCard='123456**********34', password='*******', email='123**@qq.com', phone='188****8888'}], userArray=[User{username='脱*君', idCard='123456**********34', password='*******', email='123**@qq.com', phone='188****8888'}]}
 脱敏后原始： UserEntryObject{user=User{username='脱敏君', idCard='123456190001011234', password='1234567', email='12345@qq.com', phone='18888888888'}, userList=[User{username='脱敏君', idCard='123456190001011234', password='1234567', email='12345@qq.com', phone='18888888888'}], userArray=[User{username='脱敏君', idCard='123456190001011234', password='1234567', email='12345@qq.com', phone='18888888888'}]}
 ```
 
@@ -428,7 +428,7 @@ public static SystemBuiltInAt buildSystemBuiltInAt() {
 @Test
 public void sensitiveTest() {
     final String originalStr = "SystemBuiltInAt{phone='18888888888', password='1234567', name='脱敏君', email='12345@qq.com', cardId='123456190001011234'}";
-    final String sensitiveStr = "SystemBuiltInAt{phone='188****8888', password='null', name='脱*君', email='123**@qq.com', cardId='123456**********34'}";
+    final String sensitiveStr = "SystemBuiltInAt{phone='188****8888', password='*******', name='脱*君', email='123**@qq.com', cardId='123456**********34'}";
 
     SystemBuiltInAt systemBuiltInAt = buildSystemBuiltInAt();
     Assert.assertEquals(originalStr, systemBuiltInAt.toString());
@@ -693,7 +693,7 @@ public void sensitiveUserCollectionJsonTest() {
 ```java
 List<User> userList = DataPrepareTest.buildUserList();
 List<User> sensitiveList = SensitiveUtil.desCopyCollection(userList);
-Assert.assertEquals("[User{username='脱*君', idCard='123456**********34', password='null', email='123**@qq.com', phone='188****8888'}, User{username='集**试', idCard='123456**********34', password='null', email='123**@qq.com', phone='188****8888'}]", sensitiveList.toString());
+Assert.assertEquals("[User{username='脱*君', idCard='123456**********34', password='*******', email='123**@qq.com', phone='188****8888'}, User{username='集**试', idCard='123456**********34', password='*******', email='123**@qq.com', phone='188****8888'}]", sensitiveList.toString());
 ```
 
 ## 集合脱敏-json

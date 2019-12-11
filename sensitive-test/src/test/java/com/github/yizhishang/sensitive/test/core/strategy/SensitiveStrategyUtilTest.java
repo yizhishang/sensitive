@@ -15,7 +15,7 @@ public class SensitiveStrategyUtilTest {
     public void passwordTest() {
         final String password = "123456";
         final String sensitive = SensitiveStrategyUtil.password(password);
-        Assert.assertNull(sensitive);
+        Assert.assertEquals("******", sensitive);
     }
 
     @Test

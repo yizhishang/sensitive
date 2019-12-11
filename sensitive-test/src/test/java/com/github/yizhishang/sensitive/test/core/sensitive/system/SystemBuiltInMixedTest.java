@@ -20,7 +20,7 @@ public class SystemBuiltInMixedTest {
     @Test
     public void systemBuiltInAndSensitiveTest() {
         final String originalStr = "SystemBuiltInMixed{testField='混合'}";
-        final String sensitiveStr = "SystemBuiltInMixed{testField='null'}";
+        final String sensitiveStr = "SystemBuiltInMixed{testField='**'}";
         SystemBuiltInMixed entry = DataPrepareTest.buildSystemBuiltInMixed();
         Assert.assertEquals(originalStr, entry.toString());
 
@@ -36,7 +36,7 @@ public class SystemBuiltInMixedTest {
     @Test
     public void systemBuiltInAndSensitiveJsonTest() {
         final String originalStr = "SystemBuiltInMixed{testField='混合'}";
-        final String sensitiveJson = "{}";
+        final String sensitiveJson = "{\"testField\":\"**\"}";
         SystemBuiltInMixed entry = DataPrepareTest.buildSystemBuiltInMixed();
 
         Assert.assertEquals(sensitiveJson, SensitiveUtil.desJson(entry));
